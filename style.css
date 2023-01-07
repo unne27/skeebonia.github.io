@@ -31,6 +31,28 @@
 #fox {
     position: absolute;
     top: 50%;
+    z-index: 5;
+    left: 5%;
+    width: 40%;
+    height: 37%;
+}
+
+#fox_text {
+    position: absolute;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    left: 50%;
+    top: 68%;
+    z-index: 6;
+}
+
+#white_rect_1 {
+width: 95%;
+position: absolute;
+height: 45%;
+top: 46%;
+background: white;
 }
 
 body {
