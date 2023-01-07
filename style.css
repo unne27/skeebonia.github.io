@@ -1,8 +1,9 @@
 #flag {
-    position: relative;
+    position: fixed;
     width: 40%;
     height: 30%; 
     left: 60%;
+    z-index: 0;
 }
 
 #welcome {
@@ -11,7 +12,7 @@
     font-size: xx-large;
     color: white;
     left: 30%;
-    
+    z-index: 10;
 }
 
 #info {
@@ -20,7 +21,8 @@
     font-size: large;
     color: white;
     left: 30%;
-    top: 50%;
+    top: 100%;
+    z-index: 10;
 }
 
 body {
