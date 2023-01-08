@@ -98,7 +98,7 @@ function oonload() {
     ref1.on('value', (snap)=>{
         console.log(snap.val())
         english = snap.val()
-        print(done)
+        console.log(done)
         if (done) {
             for (let i = 0; i < english.length; i++) {
                 english[i] = english[i].toLowerCase()
@@ -114,7 +114,7 @@ function oonload() {
     ref2.on('value', (snap)=>{
         console.log(snap.val())
         skeebonian = snap.val()
-        print(done)
+        console.log(done)
         if (done) {
             for (let i = 0; i < english.length; i++) {
                 english[i] = english[i].toLowerCase()
