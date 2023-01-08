@@ -84,6 +84,7 @@ function btnclicked2() {
 }
 
 function writewords() {
+    console.log("Wrote the data!")
     let database = firebase.database()
     database.ref('english').set(english)
     database.ref('skeebonian').set(skeebonian)
