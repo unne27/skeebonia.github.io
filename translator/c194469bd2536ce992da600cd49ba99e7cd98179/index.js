@@ -32,6 +32,7 @@ function onload() {
     for (let i = 0; i < english.length; i++) {
         english[i] = english[i].toLowerCase()
         skeebonian[i] = skeebonian[i].toLowerCase()
+        print(english[i])
     }
 
 
