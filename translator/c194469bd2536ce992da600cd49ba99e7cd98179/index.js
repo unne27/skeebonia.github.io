@@ -26,6 +26,7 @@ function btnclicked() {
         }
         if (!found) {
             output += (words[i] + " ")
+            console.log("Couldn't find the word!")
         }
     }
     
@@ -53,11 +54,12 @@ function btnclicked2() {
                 found = true
                 output += (english[e] + " ")
             } else {
-                console.log("Couldn't find word!")
+                
             }
         }
         if (!found) {
             output += (words[i] + " ")
+            console.log("Couldn't find word!")
         }
     }
     
