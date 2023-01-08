@@ -5,6 +5,11 @@ let skeebonian = ['I', 'Jafer', 'ær', 'Fæðür', 'Zor', 'Shi', 'Tserechi', 'Za
 
 
 function btnclicked() {
+    for (let i = 0; i < english.length; i++) {
+        english[i] = english[i].toLowerCase()
+        skeebonian[i] = skeebonian[i].toLowerCase()
+        console.log(english[i])
+    }
     let inputfield = document.getElementById('english')
     let input = inputfield.value.toLowerCase().replace(',', '').replace('.', '');;
     let words = input.split(" ")
@@ -39,6 +44,12 @@ function btnclicked() {
 }
 
 function btnclicked2() {
+    for (let i = 0; i < english.length; i++) {
+        english[i] = english[i].toLowerCase()
+        skeebonian[i] = skeebonian[i].toLowerCase()
+        console.log(english[i])
+    }
+
     let inputfield = document.getElementById('skeebonian')
     let input = inputfield.value.toLowerCase().replace(',', '').replace('.', '');
     let words = input.split(" ")
