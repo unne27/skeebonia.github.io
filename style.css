@@ -57,7 +57,7 @@ background: white;
 
 #languageicon {
     position: absolute;
-    top: 90%;
+    top: 100%;
     z-index: 5;
     left: 55%;
     width: 40%;
@@ -70,7 +70,7 @@ background: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     left: 5%;
-    top: 108%;
+    top: 118%;
     z-index: 6;
 }
 
@@ -78,7 +78,7 @@ background: white;
 width: 95%;
 position: absolute;
 height: 45%;
-top: 86%;
+top: 96%;
 background: white;
 }
 
