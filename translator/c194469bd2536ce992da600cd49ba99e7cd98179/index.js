@@ -46,13 +46,18 @@ function btnclicked2() {
     console.log(skeebonian)
     console.log(skeebonian)
     for (let i = 0; i < words.length; i++) {
+        let found = false
         for (let e = 0; e < skeebonian.length; e++) {
             if (skeebonian[e] == words[i]) {
                 console.log("Found it!")
+                found = true
                 output += (english[e] + " ")
             } else {
                 console.log("Couldn't find word!")
             }
+        }
+        if (!found) {
+            output += (words[i] + " ")
         }
     }
     
