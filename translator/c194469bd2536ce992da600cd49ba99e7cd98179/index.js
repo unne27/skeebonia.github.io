@@ -29,6 +29,33 @@ function btnclicked() {
 
 }
 
+function btnclicked2() {
+    let inputfield = document.getElementById('skeebonian')
+    let input = inputfield.value.toLowerCase()
+    let words = input.split(" ")
+    let output = ""
+    console.log(input)
+    console.log(words)
+    console.log("Button clicked!")
+    console.log(skeebonian)
+    console.log(skeebonian)
+    for (let i = 0; i < words.length; i++) {
+        for (let e = 0; e < skeebonian.length; e++) {
+            if (skeebonian[e] == words[i]) {
+                console.log("Found it!")
+                output += (english[e] + " ")
+            } else {
+                console.log("Couldn't find word!")
+            }
+        }
+    }
+    
+    let outputText = document.getElementById("output")
+    console.log(output)
+    outputText.innerText = output
+
+}
+
 function oonload() {
     for (let i = 0; i < english.length; i++) {
         english[i] = english[i].toLowerCase()
