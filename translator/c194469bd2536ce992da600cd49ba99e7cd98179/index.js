@@ -89,7 +89,7 @@ function oonload() {
         measurementId: "G-ZFWK41PFHZ"
     
       };
-      firebaseConfig.initializeApp(firebaseConfig)
+      firebase.initializeApp(firebaseConfig)
       let database = firebase.database()
 
     let done = false
