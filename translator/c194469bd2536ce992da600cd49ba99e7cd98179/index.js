@@ -17,12 +17,14 @@ function btnclicked() {
     for (let i = 0; i < words.length; i++) {
         for (let e = 0; e < english.length; e++) {
             if (english[e] == words[i]) {
+                console.log("Found it!")
                 output += (skeebonian[e] + " ")
             }
         }
     }
-
+    
     let outputText = document.getElementById("output")
+    console.log(output)
     outputText.innerText = output
 
 }
