@@ -27,3 +27,4 @@ function btnclicked() {
 
 }
 
+document.getElementById("trbtn").onclick = btnclicked
