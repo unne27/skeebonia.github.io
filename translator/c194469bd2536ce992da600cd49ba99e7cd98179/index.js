@@ -95,7 +95,7 @@ function oonload() {
     let done = false
 
     var ref1 = database.ref('english')
-    ref.on('data', (snap)=>{
+    ref1.on('data', (snap)=>{
         console.log(snap.val())
         english = snap.val()
 
@@ -111,7 +111,7 @@ function oonload() {
     })
 
     var ref2 = database.ref('skeebonian')
-    ref.on('data'), (snap)=>{
+    ref2.on('data'), (snap)=>{
         console.log(snap.val())
         skeebonian = snap.val()
         if (done) {
