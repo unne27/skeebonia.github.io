@@ -159,8 +159,9 @@ function oonload() {
       let database = firebase.database()
       console.log(database)
     let done = false
-
+      
     var ref1 = database.ref('english')
+    console.log(ref1)
     ref1.on('value', (snap)=>{
         console.log(snap.val())
         english = snap.val()
