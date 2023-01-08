@@ -50,7 +50,7 @@ function btnclicked2() {
         }
     }
     
-    let outputText = document.getElementById("output")
+    let outputText = document.getElementById("output2")
     console.log(output)
     outputText.innerText = output
 
