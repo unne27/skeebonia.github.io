@@ -139,10 +139,12 @@ function no() {
 
 function oonload() {
     const firebaseConfig = {
-      
+
         apiKey: "AIzaSyB6x1W0lM7h2mpMUHSrcP9XpYYzNR70FaY",
     
         authDomain: "skeebonia.firebaseapp.com",
+    
+        databaseURL: "https://skeebonia-default-rtdb.europe-west1.firebasedatabase.app",
     
         projectId: "skeebonia",
     
@@ -155,6 +157,7 @@ function oonload() {
         measurementId: "G-ZFWK41PFHZ"
     
       };
+    
       firebase.initializeApp(firebaseConfig)
       let database = firebase.database()
       console.log(database)
