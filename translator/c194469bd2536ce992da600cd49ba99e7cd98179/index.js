@@ -3,6 +3,7 @@ let skeebonian = ['I', 'Jafer', 'ær', 'Fæðür', 'Zor', 'Shi', 'Tserechi', 'Za
 
 
 
+
 function btnclicked() {
     let inputfield = document.getElementById('english')
     let input = inputfield.value.toLowerCase().replace(',', '').replace('.', '');;
@@ -71,11 +72,60 @@ function btnclicked2() {
 }
 
 function oonload() {
-    for (let i = 0; i < english.length; i++) {
-        english[i] = english[i].toLowerCase()
-        skeebonian[i] = skeebonian[i].toLowerCase()
-        console.log(english[i])
+    const firebaseConfig = {
+      
+        apiKey: "AIzaSyB6x1W0lM7h2mpMUHSrcP9XpYYzNR70FaY",
+    
+        authDomain: "skeebonia.firebaseapp.com",
+    
+        projectId: "skeebonia",
+    
+        storageBucket: "skeebonia.appspot.com",
+    
+        messagingSenderId: "647627425513",
+    
+        appId: "1:647627425513:web:bf50d02c8c080a2566d278",
+    
+        measurementId: "G-ZFWK41PFHZ"
+    
+      };
+      firebaseConfig.initializeApp(firebaseConfig)
+      let database = firebase.database()
+
+    let done = false
+
+    var ref1 = database.ref('english')
+    ref.on('data', (snap)=>{
+        console.log(snap.val())
+        english = snap.val()
+
+        if (done) {
+            for (let i = 0; i < english.length; i++) {
+                english[i] = english[i].toLowerCase()
+                skeebonian[i] = skeebonian[i].toLowerCase()
+                console.log(english[i])
+            }
+        } else {
+            done = true
+        }
+    })
+
+    var ref2 = database.ref('skeebonian')
+    ref.on('data'), (snap)=>{
+        console.log(snap.val())
+        skeebonian = snap.val()
+        if (done) {
+            for (let i = 0; i < english.length; i++) {
+                english[i] = english[i].toLowerCase()
+                skeebonian[i] = skeebonian[i].toLowerCase()
+                console.log(english[i])
+            }
+        } else {
+            done = true
+        }
     }
+
+
 
 
 
