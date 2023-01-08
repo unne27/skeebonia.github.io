@@ -111,7 +111,7 @@ function oonload() {
     })
 
     var ref2 = database.ref('skeebonian')
-    ref2.on('value'), (snap)=>{
+    ref2.on('value', (snap)=>{
         console.log(snap.val())
         skeebonian = snap.val()
         if (done) {
@@ -123,7 +123,7 @@ function oonload() {
         } else {
             done = true
         }
-    }
+    })
 
 
 
