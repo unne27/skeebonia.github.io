@@ -6,14 +6,15 @@ function onload() {
         english[i] = english[i].toLowerCase()
         skeebonian[i] = skeebonian[i].toLowerCase()
     }
-}
+
 
 function btnclicked() {
     let inputfield = document.getElementById('english')
     let input = inputfield.value.toLowerCase()
     let words = input.split(" ")
     let output = ""
-
+    console.log(input)
+    console.log("Button clicked!")
     for (let i = 0; i < words.length; i++) {
         for (let e = 0; e < english.length; e++) {
             if (english[e] == words[i]) {
@@ -28,4 +29,5 @@ function btnclicked() {
     outputText.innerText = output
 
 }
-
+document.getElementById("trbtn").onclick = btnclicked
+}
