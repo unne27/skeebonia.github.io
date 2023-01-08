@@ -122,6 +122,8 @@ function addwordclicked() {
 }
 
 function yes() {
+    let inputenglish = document.getElementById('addenglish').value.toLowerCase()
+    let inputskeebonian = document.getElementById('addskeebonian').value.toLowerCase()
     english.push(inputenglish)
     skeebonian.push(inputskeebonian)
     writewords()
