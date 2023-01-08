@@ -28,7 +28,7 @@ function btnclicked() {
 
 }
 
-function onload() {
+function oonload() {
     for (let i = 0; i < english.length; i++) {
         english[i] = english[i].toLowerCase()
         skeebonian[i] = skeebonian[i].toLowerCase()
@@ -40,4 +40,4 @@ function onload() {
 
 }
 
-window.onload = onload
+window.onload = oonload
