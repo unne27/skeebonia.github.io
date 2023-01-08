@@ -105,21 +105,25 @@ function addwordclicked() {
                 break
             }
         }
-        output.innerText = "That word already exists! It's called " + skeebonianword + ". \n Are you sure you want to replace it?"
+        output = "That word already exists! It's called " + skeebonianword + ". \n Are you sure you want to replace it?"
         nobtn.style = "display:block;"
         yesbtn.style = "display:block;"
+        
     } else {
         english.push(inputenglish)
         skeebonian.push(inputskeebonian)
         writewords()
-
+        output = "Added new word!"
     }
+
+    outputdiv.innerText = output
 }
 
 function yes() {
     english.push(inputenglish)
     skeebonian.push(inputskeebonian)
     writewords()
+    document.getElementById('addoutput').innerText = "Replaced the word!"
 }
 
 function no() {
