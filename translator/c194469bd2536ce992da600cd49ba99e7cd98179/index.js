@@ -157,7 +157,7 @@ function oonload() {
       };
       firebase.initializeApp(firebaseConfig)
       let database = firebase.database()
-
+      console.log(database)
     let done = false
 
     var ref1 = database.ref('english')
