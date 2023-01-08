@@ -7,6 +7,7 @@ function btnclicked() {
     let words = input.split(" ")
     let output = ""
     console.log(input)
+    console.log(words)
     console.log("Button clicked!")
     for (let i = 0; i < words.length; i++) {
         for (let e = 0; e < english.length; e++) {
