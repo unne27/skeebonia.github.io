@@ -31,7 +31,7 @@ function onload() {
 
 
 
-document.getElementById("trbtn").onclick = btnclicked
+
 }
 
 window.onload = onload
