@@ -1,6 +1,7 @@
-let english = ['A', 'About', 'All', 'Alert', 'Am', 'And', 'Anything', 'Are', 'Atleast', 'Authorities', 'Avoid', 'Be', 'Building', 'Discussion', 'Done', 'Ever', 'Government', 'Hello', 'In', 'Information', 'Important', 'Is', 'Know', 'Me', 'Mine', 'More', 'Must', 'Never', 'Not', 'Of', 'Or', 'Our', 'Other', 'Said', 'Say', 'Skeebonia', 'So', 'Swedish', 'To', 'That', 'Than', 'The', 'Them', 'These', 'They', 'Those', 'Though', 'Thorough', 'Through', 'Under', 'Understand', 'Understanding', 'Understatement', 'Very', 'We', 'Why', 'Where', 'Weaponry', 'You', 'Your']
-let skeebonian = ['I', 'Jafer', 'ær', 'Fæðür', 'Zor', 'Shi', 'Tserechi', 'Zar', 'Tarrik', 'Chenðæneri', 'Hürent', 'Fai', 'Ünterzal', 'Œrentich', 'Keð', 'Tsanchi', 'Gzentelmoð', 'Kasching', 'œr', 'Xeþernai', 'Laeðrænich', 'Tei', 'Mben', 'Mü', 'Müs', 'Ið', 'Bœz', 'Mvender', 'Kœ', 'Hæ', 'Bœþür', 'Iztr', 'Nteher', 'Zþan', 'Lætr', 'Skeebonia', 'Læ', 'Sedðes', 'La', 'Ghe', 'Zheþ', 'Ge', 'Đen', 'Ges', 'Đei', 'Gæs', 'Tol', 'Tarnzich', 'Tier', 'Gzech', 'Ürðets', 'Ürðetsin', 'Æþünfrich', 'Tgare', 'Vsach', 'Oib', 'Üchzal', 'Eðesvarn', 'Te', 'Tes']
-
+//let english = ['A', 'About', 'All', 'Alert', 'Am', 'And', 'Anything', 'Are', 'Atleast', 'Authorities', 'Avoid', 'Be', 'Building', 'Discussion', 'Done', 'Ever', 'Government', 'Hello', 'In', 'Information', 'Important', 'Is', 'Know', 'Me', 'Mine', 'More', 'Must', 'Never', 'Not', 'Of', 'Or', 'Our', 'Other', 'Said', 'Say', 'Skeebonia', 'So', 'Swedish', 'To', 'That', 'Than', 'The', 'Them', 'These', 'They', 'Those', 'Though', 'Thorough', 'Through', 'Under', 'Understand', 'Understanding', 'Understatement', 'Very', 'We', 'Why', 'Where', 'Weaponry', 'You', 'Your']
+//let skeebonian = ['I', 'Jafer', 'ær', 'Fæðür', 'Zor', 'Shi', 'Tserechi', 'Zar', 'Tarrik', 'Chenðæneri', 'Hürent', 'Fai', 'Ünterzal', 'Œrentich', 'Keð', 'Tsanchi', 'Gzentelmoð', 'Kasching', 'œr', 'Xeþernai', 'Laeðrænich', 'Tei', 'Mben', 'Mü', 'Müs', 'Ið', 'Bœz', 'Mvender', 'Kœ', 'Hæ', 'Bœþür', 'Iztr', 'Nteher', 'Zþan', 'Lætr', 'Skeebonia', 'Læ', 'Sedðes', 'La', 'Ghe', 'Zheþ', 'Ge', 'Đen', 'Ges', 'Đei', 'Gæs', 'Tol', 'Tarnzich', 'Tier', 'Gzech', 'Ürðets', 'Ürðetsin', 'Æþünfrich', 'Tgare', 'Vsach', 'Oib', 'Üchzal', 'Eðesvarn', 'Te', 'Tes']
+let english
+let skeebonian
 
 
 
@@ -172,6 +173,8 @@ function oonload() {
         } else {
             done = true
         }
+    }, ()=>{
+        document.body.style = "display:none;"
     })
 
     var ref2 = database.ref('skeebonian')
