@@ -124,10 +124,18 @@ function addwordclicked() {
 function yes() {
     let inputenglish = document.getElementById('addenglish').value.toLowerCase()
     let inputskeebonian = document.getElementById('addskeebonian').value.toLowerCase()
-    english.push(inputenglish)
-    skeebonian.push(inputskeebonian)
+    for (let i = 0; i < english.length; i++) {
+        if (english[i] == inputenglish) {
+            skeebonian[i] = inputskeebonian
+        }
+    }
     writewords()
     document.getElementById('addoutput').innerText = "Replaced the word!"
+    let nobtn = document.getElementById("no")
+    let yesbtn = document.getElementById("yes")
+
+    nobtn.style = "display:none;"
+    yesbtn.style = "display:none;"
 }
 
 function no() {
