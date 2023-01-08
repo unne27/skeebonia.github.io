@@ -82,6 +82,55 @@ function btnclicked2() {
 
 }
 
+function writewords() {
+    let database = firebase.database()
+    database.ref('english').set(english)
+    database.ref('skeebonian').set(skeebonian)
+}
+
+function addwordclicked() {
+    let inputenglish = document.getElementById('addenglish').value.toLowerCase()
+    let inputskeebonian = document.getElementById('addskeebonian').value.toLowerCase()
+    let outputdiv = document.getElementById('addoutput')
+    let output = ""
+
+    if (english.includes(inputenglish)) {
+        let nobtn = document.getElementById("no")
+        let yesbtn = document.getElementById("yes")
+
+        let skeebonianword
+        for (let i = 0; i < english.length; i++) {
+            if (english[i] == inputenglish) {
+                skeebonianword = skeebonian[i]
+                break
+            }
+        }
+        output.innerText = "That word already exists! It's called " + skeebonianword + ". \n Are you sure you want to replace it?"
+        nobtn.style = "display:block;"
+        yesbtn.style = "display:block;"
+    } else {
+        english.push(inputenglish)
+        skeebonian.push(inputskeebonian)
+        writewords()
+
+    }
+}
+
+function yes() {
+    english.push(inputenglish)
+    skeebonian.push(inputskeebonian)
+    writewords()
+}
+
+function no() {
+    let nobtn = document.getElementById("no")
+    let yesbtn = document.getElementById("yes")
+
+    nobtn.style = "display:none;"
+    yesbtn.style = "display:none;"
+    document.getElementById('addoutput').innerText = ""
+}
+
 function oonload() {
     const firebaseConfig = {
       
@@ -135,6 +184,8 @@ function oonload() {
         } else {
             done = true
         }
+    }, ()=>{
+        document.body.style = "display:none;"
     })
 
 
