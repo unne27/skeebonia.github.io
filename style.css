@@ -57,7 +57,7 @@ background: white;
 
 #languageicon {
     position: absolute;
-    top: 100%;
+    top: 90%;
     z-index: 5;
     left: 55%;
     width: 40%;
@@ -78,7 +78,7 @@ background: white;
 width: 95%;
 position: absolute;
 height: 45%;
-top: 106%;
+top: 86%;
 background: white;
 }
 
