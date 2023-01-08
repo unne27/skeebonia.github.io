@@ -13,13 +13,19 @@ function btnclicked() {
     console.log(english)
     console.log(skeebonian)
     for (let i = 0; i < words.length; i++) {
+        let found = false
         for (let e = 0; e < english.length; e++) {
+            
             if (english[e] == words[i]) {
                 console.log("Found it!")
+                found = true
                 output += (skeebonian[e] + " ")
             } else {
-                console.log("Couldn't find word!")
+                
             }
+        }
+        if (!found) {
+            output += (words[i] + " ")
         }
     }
     
